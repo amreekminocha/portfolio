@@ -1,0 +1,75 @@
+.services{
+    padding: 0 3rem;
+    display: flex;
+    height: 115vh;
+    margin-top: 8rem;
+    /* margin-bottom: 13rem; */
+}
+
+.text{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.text>:nth-child(1){
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-size: bold;
+}
+
+.text>:nth-child(3){
+    color: var(--gray);
+    font-size: 0.8rem;
+}
+
+.s-button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.cards{
+    flex: 1;
+    position: relative;
+}
+
+.cards>*{
+    position: absolute;
+}
+
+.s-blur1{
+    top: 13rem;
+    left: -14rem;
+}
+
+.s-blur2{
+    top: 6rem;
+    left: 20rem;
+}
+
+@media screen and (max-width : 480px){
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 72rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+    .cards>*{
+        position: static;
+    }
+
+}

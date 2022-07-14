@@ -1,0 +1,31 @@
+.footer{
+    margin:-0.5rem -3.5rem ;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -7rem;
+}
+
+.f-content{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    color: white;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.f-icons{
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width : 480px){
+    .f-content{
+        margin-top: 3.5rem;
+        gap: 1rem;
+    }
+}

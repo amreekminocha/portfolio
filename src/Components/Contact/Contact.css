@@ -1,0 +1,78 @@
+.contact{
+    padding: 0 3rem;
+    margin-top: 4rem;
+    height: 80vh;
+    display: flex;
+}
+
+.c-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.c-left>*{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.c-left span:nth-of-type(2){
+    color: var(--orange);
+}
+
+.c-right{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    padding: 0.3em;
+    font-size: 16px;
+    /* box-shadow: var(--boxShadow); */
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.c-blur1{
+    top: 12rem;
+    left: -3rem;
+}
+
+.c-blur2{
+    top: 2rem;
+    left: 12rem;
+}
+
+@media screen and (max-width : 480px){
+    .contact{
+        padding: 0;
+        flex-direction: column;
+        gap: 4rem;
+        height: 40rem;
+    }
+
+    .c-left{
+        align-items: center;
+    }
+
+    .c-right .user{
+        width:15rem;
+    }
+}
